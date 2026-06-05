@@ -1,0 +1,130 @@
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 25px;
+}
+
+input{
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button{
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#agregar{
+    background: #2563eb;
+    color: white;
+}
+
+#agregar:hover{
+    transform: scale(1.03);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+th{
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+}
+
+td{
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+tr:hover{
+    background: #f9fafb;
+}
+
+td button{
+    padding: 8px 12px;
+}
+
+td button:nth-child(1){
+    background: #22c55e;
+    color: white;
+}
+
+td button:nth-child(2){
+    background: #f59e0b;
+    color: white;
+}
+
+td button:nth-child(3){
+    background: #ef4444;
+    color: white;
+}
+
+input[type="text"],
+input[type="number"]{
+    width: calc(50% - 15px);
+}
+
+#buscador{
+    width: 100%;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.stock-bajo{
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 700px){
+
+    body{
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #agregar{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    table{
+        font-size: 13px;
+    }
+
+    th, td{
+        padding: 8px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+}

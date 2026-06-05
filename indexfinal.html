@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Stock</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+    <h1>📦 Control de Stock</h1>
+
+    <input type="text" id="producto" placeholder="Producto">
+    <input type="text" id="proveedor" placeholder="Proveedor">
+    <input type="number" id="cantidad" placeholder="Cantidad">
+
+    <button id="agregar">Agregar</button>
+
+    <input type="text" id="buscador" placeholder="🔎 Buscar producto">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Proveedor</th>
+                <th>Stock</th>
+                <th>+</th>
+                <th>-</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+    </table>
+
+    <script type="module" src="final.js"></script>
+
+</body>
+</html>
